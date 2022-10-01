@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="#" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -38,60 +38,12 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-      <h1 class="logo"><a href="index.html">ThynkTech</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="index.html">Home</a></li>
-          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li class="dropdown"><a href="#"><span>Domain</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="registerdomain.html">Registered a Domain</a></li>
-                  <li><a href="transferdomain.html">Transfer a Domain</a></li>
-                </ul>
-                </li>
-              <li class="dropdown"><a href="#"><span>Web Hosting</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Shared Hosting</a></li>
-                  <li><a href="#">Cloud Hosting</a></li>
-                  <li><a href="vps.html">Virtual Private Server</a></li>
-                  <li><a href="dedicated-server.html">Dedicated Server</a></li>
-                </ul>
-              </li>
-              <li class="dropdown"><a href="#"><span>Email & Productivity</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="microsoft365.html">Microsoft Office365</a></li>
-                  <li><a href="googleworkspace.html">Google Workspace</a></li>
-                  <li><a href="maiboxmigration.html">Mailbox Migration</a></li>
-                </ul>
-              <li class="dropdown"><a href="#"><span>Servers & Cloud Hosting</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="multi-cloud-server.html">Multi Cloud</a></li>
-                  <li><a href="microsoft-azure.html">Microsoft Azure</a></li>
-                  <li><a href="aws-server.html">AWS</a></li>
-                  <li><a href="vmware.html">Vmware</a></li>
-                  <li><a href="nutanix.html">Nutanix</a></li>
-                  <li><a href="microsoft-hyper-v.html">Microsoft Hyper-V</a></li>
-                  <li><a href="proxmox.html">Proxmox</a></li>
-                  <li><a href="zen-server.html">Zen</a></li>
-                </ul>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="about.html">About</a></li>
-          <li><a class="nav-link scrollto" href="team.html">Team</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">Contact</a></li>
-          <li><a class="getstarted scrollto" href="index.html">Get Started</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+  <?php
+  include ('assets\php\header.php');
+  ?>
 
-    </div>
-  </header><!-- End Header -->
+  <!--End Header -->
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
@@ -101,7 +53,7 @@
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>All your IT support in one place</h1>
           <h2>We are a team of experienced IT specialists, ready to solve your issues. Let`s talk</h2>
-          <div><a href="#about" class="btn-get-started scrollto">Get Started</a></div>
+          <div><a href="contact.html" class="btn-get-started scrollto">Get Started</a></div>
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
           <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
@@ -768,11 +720,11 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h2>ThynkTech</h2>
+            <h2 class="footer-color">ThynkTech</h2>
             <p>
               B2C 1410 Near Kanika Wall Street Chakala <br>
               Chakala M.I.D.C Andheri (East)<br>
-              Mumbai, NY 400093<br>
+              Mumbai, 400093<br>
               India <br><br>
               <strong>Phone:</strong> +91-9696477777<br>
               <strong>Email:</strong> thynktech@outlook.com<br>
@@ -780,7 +732,7 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4 class="footer-color">Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
@@ -788,7 +740,7 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
+            <h4 class="footer-color">Our Services</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="registerdomain.html">Domain</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="sharedhosting.html">Hosting Server</a></li>
@@ -799,7 +751,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
+            <h4 class="footer-color">Join Our Newsletter</h4>
             <p>For all the update from ThynkTech</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
