@@ -128,7 +128,7 @@
                     <div id="form-message-success" class="mb-4">
                       Your message was sent, thank you!
                     </div>
-                    <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                    <form onsubmit="sendEmail(); reset();return false;" id="contactForm" name="contactForm" class="contactForm">
                       <div class="row">
                         <div class="col-md-12">
                           <div class="form-group">
@@ -152,7 +152,7 @@
                         </div>
                         <div class="col-md-12">
                           <div class="form-group">
-                            <input type="submit" value="Send Message" class="btn btn-primary">
+                            <input type="submit" value="sendEmail" class="btn btn-primary">
                             <div class="submitting"></div>
                           </div>
                         </div>
@@ -300,6 +300,31 @@
 <script src="assets/js/popper.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/jquery.validate.min.js"></script>
+<script src="https://smtpjs.com/v2/smtp.js"></script>
+ 
+  <script type="text/javascript">
+    function sendEmail() {
+
+      var name=contactForm.name.value;
+      var email=contactForm.email.value;
+      var subject=contactForm.subject.value;
+      var message=contactForm.message.value;
+
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "",
+        Password: "",
+        To: '',
+        Name: document.getElementById("name").value,
+        From: document.getElementById("email").value,
+        Subject: document.getElementById("subject").value,
+        Body: document.getElementById("message").value,
+      })
+        .then(function (message) {
+          alert("Email sent successfully")
+        });
+    }
+  </script>
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
