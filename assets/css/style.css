@@ -959,7 +959,7 @@ section {
 }
 .our-team:hover .social li a{
     background: rgba(24, 6, 185, 0.8);
-    color: rgb(45, 241, 6);
+    color: #fff;
 }
 @media only screen and (max-width: 990px){
     .our-team{ margin-bottom: 30px; }
